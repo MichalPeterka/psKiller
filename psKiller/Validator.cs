@@ -18,13 +18,13 @@ namespace psKiller
                 Environment.Exit(1);
             }
             
-            if (!double.TryParse(args[1], out double interval) || interval > maxInterval)
+            if (!double.TryParse(args[1], out double interval) || interval > maxInterval || interval < 0)
             {
                 WriteErrorLine($"'Interval' should be within (0 to {maxInterval} minutes).");
                 Environment.Exit(1);
             }
 
-            if (!double.TryParse(args[2], out double timeout) || timeout > maxInterval)
+            if (!double.TryParse(args[2], out double timeout) || timeout > maxInterval || interval < 0)
             {
                 WriteErrorLine($"'Timeout' should be within (0 to {maxInterval} minutes).");
                 Environment.Exit(1);
