@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "psKiller": {
+      "commandName": "Project",
+      "commandLineArgs": "psKiller 1 3"
+    }
+  }
+}
